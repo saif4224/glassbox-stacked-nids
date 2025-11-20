@@ -1,0 +1,4 @@
+Ref,Study,Dataset,Method,Accuracy,MacroF1,Notes
+[20],Moustafa & Slay (2015),UNSW-NB15,—,N/A,N/A,Dataset introduction paper (MilCIS 2015 doi:10.1109/MilCIS.2015.7348948) — verified from PDF; describes testbed and 49 features only; no classification results reported anywhere in the paper
+[1],Al-Omari & Al-Haija (2024),UNSW-NB15,Hybrid FS (CA+MI+RFECV) + RF,0.9781,0.9781,"VERIFIED from paper PDF (JISIS 14:2 2024 doi:10.58346/JISIS.2024.I2.004); binary classification (Normal vs Attack); 22 features selected from 39"
+ours,This work,UNSW-NB15,Diversity-driven stacking (CB+ET+EBM) + per-class thresholds,0.8439,0.6713,"5-fold CV; leak-proof pipeline; wF1=0.8554, MCC=0.8043; multi-class (10 attack categories) — not directly comparable to binary results above"

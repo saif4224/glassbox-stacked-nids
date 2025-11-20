@@ -1,0 +1,7 @@
+Class,Stage,Precision,Recall,F1,FalseAlarms_per_100k
+Bot,before,0.675,0.898,0.771,29.9
+Bot,after,0.701,0.887,0.783,26.2
+Web Attack - Brute Force,before,0.691,0.571,0.625,13.6
+Web Attack - Brute Force,after,0.656,0.658,0.657,18.4
+Web Attack - XSS,before,0.33,0.577,0.42,26.9
+Web Attack - XSS,after,0.337,0.423,0.375,19.1
