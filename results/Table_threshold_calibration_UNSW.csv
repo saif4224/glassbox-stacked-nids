@@ -1,0 +1,9 @@
+Class,Stage,Precision,Recall,F1,FalseAlarms_per_100k
+Worms,before,0.68,0.789,0.731,26.1
+Worms,after,0.777,0.743,0.76,15.0
+Shellcode,before,0.779,0.861,0.818,149.0
+Shellcode,after,0.831,0.825,0.828,102.8
+Backdoor,before,0.108,0.189,0.137,1472.7
+Backdoor,after,0.378,0.135,0.199,208.5
+Analysis,before,0.151,0.272,0.195,1648.0
+Analysis,after,0.652,0.212,0.32,121.9
