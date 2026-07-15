@@ -37,7 +37,14 @@ glassbox-stacked-nids/
 ├── data/                                # download instructions (no raw CSVs)
 ├── figures/                             # all figures saved by the notebooks
 ├── results/                             # ablation / calibration / agreement tables (CSV)
-└── manuscript/                          # write-up
+│   ├── Table_leakage_control_infold_FS*.csv   # in-fold feature selection leakage control
+│   └── Table_SOTA_comparison_*.csv            # SOTA comparison (verified from source PDFs)
+└── manuscript/
+    ├── Glass-Box NIDS (JNCA).docx                          # main manuscript
+    ├── Glass-Box NIDS - Highlights (JNCA).docx
+    ├── Glass-Box NIDS - Cover Letter (JNCA).docx
+    ├── Glass-Box NIDS - Graphical Abstract (JNCA).docx
+    └── Glass-Box NIDS - Declaration of Competing Interest (JNCA).docx
 ```
 
 ## Setup
