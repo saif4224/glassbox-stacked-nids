@@ -18,8 +18,8 @@ on faith — the "glass box" half of the name.
 |---|---|---|---|---|
 | CICIDS-2017 | Baseline Ensemble | 0.8788 | 0.8899 | 0.6585 |
 | CICIDS-2017 | **Stacking + Thresholds** | **0.9984** | **0.9984** | **0.9953** |
-| UNSW-NB15 | Baseline Ensemble | 0.5476 | 0.5983 | 0.4813 |
-| UNSW-NB15 | **Stacking + Thresholds** | **0.8567** | **0.8591** | **0.8172** |
+| UNSW-NB15 | Baseline Ensemble | 0.5479 | 0.6128 | 0.4828 |
+| UNSW-NB15 | **Stacking + Thresholds** | **0.8174** | **0.8210** | **0.7644** |
 
 Full component-by-component ablations, per-class threshold calibration,
 minority-class (SMOTE/ADASYN) remediation, and SHAP-vs-EBM explanation
