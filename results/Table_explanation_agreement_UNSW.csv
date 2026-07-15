@@ -1,9 +1,9 @@
 Metric,Value
 Top-5 feature agreement,0.4
-Top-5 rank agreement,0.0
-Top-10 feature agreement,0.9
-Top-10 rank agreement,0.0
-Spearman rho (all features),0.803
-Spearman p-value,1.352e-06
-Kendall tau (all features),0.62
-Kendall p-value,3.571e-06
+Top-5 rank agreement,0.2
+Top-10 feature agreement,0.8
+Top-10 rank agreement,0.1
+Spearman rho (all features),0.84
+Spearman p-value,6.311e-09
+Kendall tau (all features),0.632
+Kendall p-value,1.231e-07
