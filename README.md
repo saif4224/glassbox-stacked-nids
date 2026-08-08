@@ -40,9 +40,9 @@ glassbox-stacked-nids/
 │   ├── Table_leakage_control_infold_FS*.csv   # in-fold feature selection leakage control
 │   └── Table_SOTA_comparison_*.csv            # SOTA comparison (verified from source PDFs)
 └── manuscript/
-    ├── Glass-Box NIDS (Telecommunication Systems).docx             # main manuscript, under review
-    ├── Title Page - Glass-Box NIDS (Telecommunication Systems).docx
-    └── Glass-Box NIDS - Cover Letter (Telecommunication Systems).docx
+    ├── Glass-Box NIDS (IJMLC).docx             # main manuscript, under review
+    ├── Title Page - Glass-Box NIDS (IJMLC).docx
+    └── Glass-Box NIDS - Cover Letter (IJMLC).docx
 ```
 
 ## Setup
