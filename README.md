@@ -15,7 +15,7 @@ This methodology was formally evaluated on the **CICIDS-2017** dataset and rigor
 The architecture utilizes a meta-learner stacking approach combined with per-class decision-threshold calibration and SMOTE/ADASYN for minority-class remediation (e.g., catching rare zero-day behaviors).
 
 1. **High Detection Efficacy:** Achieves **99.84% F1-Score** on CICIDS-2017 and **82.10% F1-Score** on the highly complex UNSW-NB15 dataset.
-2. **Transparent Threat Intelligence:** We don't just detect anomalies; we explain *why* the model flagged them by cross-checking **SHAP values** against native **EBM explanations** to ensure structural agreement.
+2. **Rigorously Tested Explanation Trust:** The embedded glass-box member (EBM) gives an exact, no-extra-cost reference to check post-hoc **SHAP** explanations against — and the manuscript tests, rather than assumes, whether that check functions as a deployable trust signal. The honest result: it largely does not outperform the model's own confidence score, a finding reported in full rather than a "we ensured agreement" claim.
 3. **Optimized Latency:** Balances inference speed (latency) with detection accuracy via Pareto frontier analysis, making it viable for real-time SOC environments.
 
 ---
@@ -65,7 +65,9 @@ glassbox-stacked-nids/
 ├── figures/                             # Generated metric graphs and XAI charts
 ├── results/                             # Ablation / calibration / agreement tables (CSV)
 └── manuscript/
-    └── Glass-Box NIDS (IJMLC).docx      # Main manuscript detailing the methodology
+    ├── manuscript.docx                  # Main manuscript (venue-neutral; retitled per current target journal)
+    ├── title_page.docx                  # Title page with author/ORCID/abstract/keywords
+    └── cover_letter.docx                # Cover letter (content is addressed to whichever journal is the current submission target)
 ```
 
 ## 🛠️ Setup & Execution
