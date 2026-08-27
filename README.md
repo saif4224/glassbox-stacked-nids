@@ -15,7 +15,7 @@ This methodology was formally evaluated on the **CICIDS-2017** dataset and rigor
 The architecture utilizes a meta-learner stacking approach combined with per-class decision-threshold calibration and SMOTE/ADASYN for minority-class remediation (e.g., catching rare zero-day behaviors).
 
 1. **High Detection Efficacy:** Achieves **99.84% F1-Score** on CICIDS-2017 and **82.10% F1-Score** on the highly complex UNSW-NB15 dataset.
-2. **Rigorously Tested Explanation Trust:** The embedded glass-box member (EBM) gives an exact, no-extra-cost reference to check post-hoc **SHAP** explanations against — and the manuscript tests, rather than assumes, whether that check functions as a deployable trust signal. The honest result: it largely does not outperform the model's own confidence score, a finding reported in full rather than a "we ensured agreement" claim.
+2. **Rigorously Tested Explanation Trust:** The embedded glass-box member (EBM) gives an exact, no-extra-cost reference to check post-hoc **SHAP** explanations against, and the manuscript tests, rather than assumes, whether that check functions as a deployable trust signal. The honest result: it largely does not outperform the model's own confidence score, a finding reported in full rather than a "we ensured agreement" claim.
 3. **Optimized Latency:** Balances inference speed (latency) with detection accuracy via Pareto frontier analysis, making it viable for real-time SOC environments.
 
 ---
@@ -49,7 +49,7 @@ We extract Global Feature Importances using SHAP (for CatBoost/ExtraTrees) and c
 ![SHAP Feature Importance](figures/Fig4a_SHAP_Bar_CatBoost.png)
 
 ### Evaluating Explanation Agreement
-We measure the statistical correlation (Spearman/Kendall) and Top-K overlap to ensure that the explanations provided to security analysts are reliable and not just artifacts of the model's geometry.
+We measure statistical correlation (Spearman/Kendall) and Top-K overlap between SHAP and the exact EBM reference, then test directly whether that agreement functions as a usable trust signal for an operator. It largely does not: the manuscript reports this as a tested negative result, not an assumed guarantee.
 ![Explanation Agreement](figures/Fig6_Explanation_Agreement.png)
 
 ---
@@ -83,4 +83,4 @@ pip install -r requirements.txt
 Download the raw datasets per [`data/README.md`](data/README.md), then run the Jupyter notebooks in `notebooks/` from top to bottom. Each notebook automatically generates its own visualizations into `figures/` and tabular data into `results/`.
 
 ## 📜 License
-MIT — see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
